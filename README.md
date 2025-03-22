@@ -7,11 +7,9 @@ Kali ini saya mencoba untuk menampilkan data dari Database pada web browser. ada
 - Install Taildwind CDN
 - Folder Template
 
-![image.png](attachment:cf50557c-e8e0-43b8-bec1-646202c66cae:image.png)
 
 1. Siapkan databasenya dengan cara masuk folder handphones dan buka file `models.py` dan disini saya membuat database spesifikasi product handphones contoh seperti di bawah ini
     
-    ![image.png](attachment:726c3fe9-1f32-47ab-b539-f5c13159ce46:image.png)
     
     - Penjelasan :
         
@@ -23,19 +21,15 @@ Kali ini saya mencoba untuk menampilkan data dari Database pada web browser. ada
         
 2. Lalu cek pada admin panel apakah sudah muncul atau belum untuk database handphones tersebut
     
-    ![image.png](attachment:0cd12083-bc09-4f99-9330-dba6988514b3:image.png)
     
     jika sudah muncul silahkan di klik lalu lanjut untuk pengisian sebagai contoh seperti di bawah ini
     
-    ![image.png](attachment:a7652695-e4de-4a5e-b68e-892885ff2235:image.png)
     
     klik save nanti akan muncul seperti di bawah ini
     
-    ![image.png](attachment:56d74d74-fa86-4c3e-9552-bfa27b040a13:image.png)
     
-3. Lalu kita coba untuk passing datanya dari database ke Browser dengan cara buka file [views.py](http://views.py) dan isikan seperti berikut ini
+3. Lalu kita coba untuk passing datanya dari database ke Browser dengan cara buka file views.py dan isikan seperti berikut ini
     
-    ![image.png](attachment:7563b6a0-995d-44cb-a159-765dd485fe85:image.png)
     
     - Penjelasan :
         
@@ -47,7 +41,6 @@ Kali ini saya mencoba untuk menampilkan data dari Database pada web browser. ada
         
 4. Jika sudah saya akan mencoba untuk membuat styling card setiap `handphone` , saya akan membuat file bernama `card-hp.html` pada folder `components` , yang isinya adalah seperti berikut ini
     
-    ![image.png](attachment:388e157c-cca9-4407-8cbc-c3311019eb5b:image.png)
     
     - Penjelasan :
         
@@ -55,7 +48,6 @@ Kali ini saya mencoba untuk menampilkan data dari Database pada web browser. ada
         
 5. Lalu saya akan melakukan looping untuk menampilkan semua data yang akan di render dengan cara seperti beriku ini
     
-    ![image.png](attachment:2efcc321-d4c6-4cc4-8744-5d697670c64f:image.png)
     
     Penjelasan : 
     Bagian ini adalah loop yang iterasi melalui setiap objek `handphone` dalam konteks handphones. Untuk setiap `handphone`, template `components/card-hp.html` akan di-include dan dirender.
