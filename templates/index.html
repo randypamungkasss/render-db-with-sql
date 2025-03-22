@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block page %}
+<h1>Halo Dunia!</h1>
+<div>
+  {% for handphone in handphones %} {% include "components/card-hp.html" %}
+  {%endfor %}
+</div>
+{% endblock %}
